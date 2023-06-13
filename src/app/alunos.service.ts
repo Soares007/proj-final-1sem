@@ -13,7 +13,7 @@ export class AlunosService {
   getStudents(): Observable<Aluno[]> {
     return this.http.get<Aluno[]>(this.url);
   }
-  getClient(id: number): Observable<Aluno> {
+  getStudent(id: number): Observable<Aluno> {
     return this.http.get<Aluno>(`${this.url}/${id}`);
   }
 

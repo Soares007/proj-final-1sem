@@ -35,6 +35,29 @@
     }
   ],
   "professores": [
-    {}
+    {
+      "id": 1,
+      "name": "Thomas Souza",
+      "email": "thomas.souza@fatec.sp.gov.br",
+      "phone": 1164789078965,
+      "foto": "https://pngimg.com/d/teacher_PNG71.png",
+      "course": "Análise e desenvolvimento de Sistemas"
+    },
+    {
+      "id": 2,
+      "name": "Gerson Silva",
+      "email": "gerson.silva@fatec.sp.gov.br",
+      "phone": 1198675489654,
+      "foto": "https://www.freepnglogos.com/uploads/teacher-png/teacher-make-footballers-franchising-40.png",
+      "course": "Design de Interiores"
+    },
+    {
+      "id": 3,
+      "name": "Silvana Rodrigues",
+      "email": "silvana.rodrigues",
+      "phone": 119857649076,
+      "foto": "https://pngimg.com/d/teacher_PNG84.png",
+      "course": "Meio Ambiente"
+    }
   ]
 }

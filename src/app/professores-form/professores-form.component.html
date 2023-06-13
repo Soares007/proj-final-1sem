@@ -1,1 +1,57 @@
-<p>professores-form works!</p>
+<div class="row">
+  <div class="col-8 m-auto">
+    <form  [formGroup]="formGroupTeacher" class="text-white">
+      <div class="mb-3">
+        <div class="display-6 text-center">
+          Cadastro de Professores
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="name" class="form-label">Nome:</label>
+        <input type="text" formControlName="name" class="form-control" id="name" placeholder="Nome do Professor">
+        <div *ngIf="submitted && name.invalid">
+          <small class="text-danger">Nome Inválido!</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email Institucional:</label>
+        <input type="text" formControlName="email" class="form-control" id="email"
+          placeholder="Email institucional do aluno">
+          <div *ngIf="submitted && email.invalid">
+            <small class="text-danger">Email Inválido!</small>
+          </div>
+      </div>
+      <div class="mb-3">
+        <label for="phone" class="form-label">Número:</label>
+        <input type="number" formControlName="phone" class="form-control" id="phone" placeholder="Número de Telefone">
+        <div *ngIf="submitted && phone.invalid">
+          <small class="text-danger">Número Inválido!</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="foto" class="form-label">Foto:</label>
+        <input type="text" formControlName="foto" class="form-control" id="foto" placeholder="Link da foto do estudante">
+        <div *ngIf="submitted && foto.invalid">
+          <small class="text-danger">Foto Inválida!</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="course" class="form-label">Curso:</label>
+        <select formControlName="course" class="form-control" id="course">
+          <option value="" disabled>Selecione o curso</option>
+          <option value="Análise e desenvolvimento de Sistemas">Análise e desenvolvimento de Sistemas</option>
+          <option value="Gestão Empresarial">Gestão Empresarial</option>
+          <option value="Design de Interiores">Design de Interiores</option>
+          <option value="Meio Ambiente">Meio Ambiente</option>
+        </select>
+        <div *ngIf="submitted && course.invalid">
+          <small class="text-danger">Curso não selecionado!</small>
+        </div>
+      </div>
+      <div class="mb-3 d-flex justify-content-end gap-2">
+        <button class="btn btn-success" (click)="save()">Salvar</button>
+      </div>
+    </form>
+  </div>
+</div>
+

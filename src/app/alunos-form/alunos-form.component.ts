@@ -37,7 +37,7 @@ export class AlunosFormComponent implements OnInit {
     this.getStudentbyId(id);
   }
   getStudentbyId(id: number) {
-    this.AlunosService.getClient(id).subscribe({
+    this.AlunosService.getStudent(id).subscribe({
       next: data => {
         this.formGroupStudent.setValue(data);
         this.isEditing = true;

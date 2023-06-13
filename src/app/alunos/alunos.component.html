@@ -1,4 +1,4 @@
-<button class="btn btn-success" (click)="create()">Novo Estudante</button>
+<button class="btn btn-success mt-2" (click)="create()">Novo Estudante</button>
 <table class="table table-striped">
   <thead>
     <tr>
@@ -25,7 +25,7 @@
       <td>{{dados.course}}</td>
       <td>{{dados.semester}}</td>
       <td><strong>{{dados.status  ? 'Aprovado(a)' : 'Reprovado(a)'}}</strong></td>
-      <td class="">
+      <td>
         <button class="btn btn-primary me-2" (click)="edit(dados)">Editar</button>
         <button class="btn btn-danger" (click)="delete(dados)">Excluir</button>
       </td>

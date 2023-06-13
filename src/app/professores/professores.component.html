@@ -1,1 +1,29 @@
-<p>professores works!</p>
+<app-professores-form [teacher]="teacher" (saveEvent)="onSaveEvent($event)" (cleanEvent)="onCleanEvent()"></app-professores-form>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">RM</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email Institucional</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Curso</th>
+      <th scope="col">Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dados of professor">
+      <th scope="row">{{dados.id}}</th>
+      <td>{{dados.name | titlecase}}</td>
+      <td>{{dados.email}}</td>
+      <td>{{dados.phone}}</td>
+      <td><img src='{{dados.foto}}' class="card-img-top" alt='{{dados.name}}' style="width: 50px;"></td>
+      <td>{{dados.course}}</td>
+      <td>
+        <button class="btn btn-primary me-2" (click)="edit(dados)">Editar</button>
+        <button class="btn btn-danger" (click)="delete(dados)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
