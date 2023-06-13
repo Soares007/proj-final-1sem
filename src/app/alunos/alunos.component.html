@@ -1,0 +1,30 @@
+<button class="btn btn-success" (click)="create()">Novo Estudante</button>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">RM</th>
+      <th scope="col">Nome</th>
+      <th scope="col">Email Institucional</th>
+      <th scope="col">Celular</th>
+      <th scope="col">Data de Nascimento</th>
+      <th scope="col">Foto</th>
+      <th scope="col">Status</th>
+      <th scope="col">Opções</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dados of alunos">
+      <th scope="row">{{dados.id}}</th>
+      <td>{{dados.name | titlecase}}</td>
+      <td>{{dados.email}}</td>
+      <td>{{dados.phone}}</td>
+      <td class="break">{{dados.data | date:'dd/MM/yyyy'}}</td>
+      <td><img src='{{dados.foto}}' class="card-img-top" alt='{{dados.name}}' style="width: 100px;"></td>
+      <td><strong>{{dados.status  ? 'Aprovado' : 'Reprovado'}}</strong></td>
+      <td class="d-flex flex-column gap-1">
+        <button class="btn btn-primary" (click)="edit(dados)">Editar</button>
+        <button class="btn btn-danger" (click)="delete(dados)">Excluir</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
