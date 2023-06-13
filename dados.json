@@ -1,5 +1,33 @@
 {
-  "alunos": [],
+  "alunos": [
+    {
+      "id": 1,
+      "name": "Erick Rucke",
+      "email": "erick.souza@fatec.sp.gov.br",
+      "data": "2004-02-18",
+      "phone": 114564789,
+      "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFWIYL0ZCPoJNoA_XMmG_CCgUFH7ZxsNrRSzBSx8rqLrjuabRuwURrE3kQnedTJF9OOU&usqp=CAU",
+      "status": false
+    },
+    {
+      "id": 2,
+      "name": "Maria Souza",
+      "email": "maria.souza@fatec.sp.gov.br",
+      "data": "2004-02-18",
+      "phone": 112435677998,
+      "foto": "https://i.pinimg.com/originals/1a/00/25/1a00251c66cee1c4ffcbe34c8543b1be.png",
+      "status": false
+    },
+    {
+      "id": 3,
+      "name": "Stefany Soares",
+      "email": "stefany.soares@fatec.sp.gov.br",
+      "data": "2005-12-14",
+      "phone": 15987564890,
+      "foto": "https://www.pngmart.com/files/15/Student-Girl-Using-Laptop-Transparent-PNG.png",
+      "status": true
+    }
+  ],
   "professores": [
     {}
   ]

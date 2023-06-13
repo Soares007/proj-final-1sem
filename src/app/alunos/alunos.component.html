@@ -19,10 +19,10 @@
       <td>{{dados.email}}</td>
       <td>{{dados.phone}}</td>
       <td class="break">{{dados.data | date:'dd/MM/yyyy'}}</td>
-      <td><img src='{{dados.foto}}' class="card-img-top" alt='{{dados.name}}' style="width: 100px;"></td>
-      <td><strong>{{dados.status  ? 'Aprovado' : 'Reprovado'}}</strong></td>
-      <td class="d-flex flex-column gap-1">
-        <button class="btn btn-primary" (click)="edit(dados)">Editar</button>
+      <td><img src='{{dados.foto}}' class="card-img-top" alt='{{dados.name}}' style="width: 50px;"></td>
+      <td><strong>{{dados.status  ? 'Aprovado(a)' : 'Reprovado(a)'}}</strong></td>
+      <td class="">
+        <button class="btn btn-primary me-2" (click)="edit(dados)">Editar</button>
         <button class="btn btn-danger" (click)="delete(dados)">Excluir</button>
       </td>
     </tr>
