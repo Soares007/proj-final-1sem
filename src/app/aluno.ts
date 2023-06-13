@@ -5,5 +5,7 @@ export interface Aluno {
   data: string;
   phone: number;
   foto: string;
+  course: string;
+  semester: string;
   status: boolean;
 }

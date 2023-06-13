@@ -12,6 +12,8 @@ export class AlunosFormComponent implements OnInit {
   formGroupStudent: FormGroup;
   submitted: boolean = false;
   isEditing: boolean = false;
+  courseOptions: string[] = ['Análise e desenvolvimento de Sistemas', 'Gestão Empresarial', 'Design de Interiores', 'Meio Ambiente'];
+  semesterOptions: string[] = ['1º Semestre', '2º Semestre', '3º Semestre', '4º Semestre', '5º Semestre', '6º Semestre', '7º Semestre', '8º Semestre', '9º Semestre', '10º Semestre'];
   constructor(private formBuilder: FormBuilder,
     private AlunosService: AlunosService,
     private route: ActivatedRoute,
@@ -25,6 +27,8 @@ export class AlunosFormComponent implements OnInit {
       data: ['', [Validators.required]],
       phone: ['', [Validators.required]],
       foto: ['', [Validators.required]],
+      course: ['', [Validators.required]],
+      semester: ['', [Validators.required]],
       status: [false]
     });
   }
@@ -78,5 +82,11 @@ export class AlunosFormComponent implements OnInit {
   }
   get foto(): any {
     return this.formGroupStudent.get("foto");
+  }
+  get course(): any {
+    return this.formGroupStudent.get("course");
+  }
+  get semester(): any {
+    return this.formGroupStudent.get("semester");
   }
 }

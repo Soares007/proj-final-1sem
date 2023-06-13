@@ -1,1 +1,19 @@
-<p>home works!</p>
+<h5 class="d-flex justify-content-center mt-2 mb-3">Estudantes Aprovados</h5>
+<div class="cards d-flex gap-5 mt-2 mb-4">
+  <div *ngFor="let dados of alunos">
+    <div *ngIf="dados.status" style="position: relative;">
+      <div class="card m-auto" style="width: 18rem; height: 27rem;">
+        <img src="{{dados.foto}}" class="card-img-top" alt="{{dados.name}}" style="height: 214px;">
+        <div class="card-body">
+          <h5 class="card-title">{{dados.name}}</h5>
+          <p>RM: {{dados.id}} </p>
+          <p class="card-text mb-3">Curso: {{dados.course}}</p>
+          <p class="card-text mb-3">{{dados.semester}}</p>
+        </div>
+        <div style="position: absolute; bottom: 0;">
+          <small style="font-style: italic;">Status:<strong>{{dados.status  ? 'Aprovado(a)' : 'Reprovado(a)'}}</strong></small>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

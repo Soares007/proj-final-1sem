@@ -43,6 +43,38 @@
         </div>
       </div>
       <div class="mb-3">
+        <label for="course" class="form-label">Curso:</label>
+        <select formControlName="course" class="form-control" id="course">
+          <option value="" disabled>Selecione o curso</option>
+          <option value="Análise e desenvolvimento de Sistemas">Análise e desenvolvimento de Sistemas</option>
+          <option value="Gestão Empresarial">Gestão Empresarial</option>
+          <option value="Design de Interiores">Design de Interiores</option>
+          <option value="Meio Ambiente">Meio Ambiente</option>
+        </select>
+        <div *ngIf="submitted && course.invalid">
+          <small class="text-danger">Curso não selecionado!</small>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="semester" class="form-label">Semestre:</label>
+        <select formControlName="semester" class="form-control" id="semester">
+          <option value="" disabled>Selecione o Semestre</option>
+          <option value="1º Semestre">1º Semestre</option>
+          <option value="2º Semestre">2º Semestre</option>
+          <option value="3º Semestre">3º Semestre</option>
+          <option value="4º Semestre">4º Semestre</option>
+          <option value="5º Semestre">5º Semestre</option>
+          <option value="6º Semestre">6º Semestre</option>
+          <option value="7º Semestre">7º Semestre</option>
+          <option value="8º Semestre">8º Semestre</option>
+          <option value="9º Semestre">9º Semestre</option>
+          <option value="10º Semestre">10º Semestre</option>
+        </select>
+        <div *ngIf="submitted && semester.invalid">
+          <small class="text-danger">Semestre não selecionado!</small>
+        </div>
+      </div>
+      <div class="mb-3">
         <div class="d-flex flex-nowrap gap-2">
           <label class="form-check-label">Estudante aprovado ? :</label>
           <div class="form-check">

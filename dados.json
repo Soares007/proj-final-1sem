@@ -7,6 +7,8 @@
       "data": "2004-02-18",
       "phone": 114564789,
       "foto": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRyFWIYL0ZCPoJNoA_XMmG_CCgUFH7ZxsNrRSzBSx8rqLrjuabRuwURrE3kQnedTJF9OOU&usqp=CAU",
+      "course": "Análise e Desenvolvimento de Sistemas",
+      "semester": "1º Semestre",
       "status": false
     },
     {
@@ -16,6 +18,8 @@
       "data": "2004-02-18",
       "phone": 112435677998,
       "foto": "https://i.pinimg.com/originals/1a/00/25/1a00251c66cee1c4ffcbe34c8543b1be.png",
+      "course": "Gestão Empresarial",
+      "semester": "4º Semestre",
       "status": false
     },
     {
@@ -25,6 +29,8 @@
       "data": "2005-12-14",
       "phone": 15987564890,
       "foto": "https://www.pngmart.com/files/15/Student-Girl-Using-Laptop-Transparent-PNG.png",
+      "course": "Design de Interiores",
+      "semester": "2º Semestre",
       "status": true
     }
   ],
